@@ -4,15 +4,18 @@ namespace Vsite.CSharp
 {
     public class PreopterećenjePorazumijevaniArg
     {
-        // TODO: Pokrenuti program i provjeriti ispise.
+        //  Pokrenuti program i provjeriti ispise.
         public static int Zbroji(int x = 1, int y = 2, int z = 3) 
         {
             return x + y + z;
         }
 
-        // TODO: Preopteretiti funkciju Zbroji novom funkcijom public static int Zbroji(int x, int y) koja će vratiti zbroj argumenata. Ponovno pokrenuti programa te usporediti ispise.
+        //  Preopteretiti funkciju Zbroji novom funkcijom public static int Zbroji(int x, int y) koja će vratiti zbroj argumenata. Ponovno pokrenuti programa te usporediti ispise.
+        public static int Zbroji(int x, int y)
+        {
+            return x + y;
+        }
 
-        
         static void Main(string[] args)
         {
             Console.WriteLine(Zbroji(5, 6, 7));
