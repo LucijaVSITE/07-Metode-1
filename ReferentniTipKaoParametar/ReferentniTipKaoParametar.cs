@@ -26,7 +26,7 @@ namespace ReferentniTipKaoParametar
             Console.WriteLine("U metodi PromijeniOsobu stavljam novu osobu:");
             o = new Osoba("Pero", 2);
             Console.WriteLine(o);
-            Console.WriteLine("Nakon povratka iz ,etode PromijeniOsobu:");
+            Console.WriteLine("Nakon povratka iz metode PromijeniOsobu:");
         }
 
         public static void PromijeniIme(Osoba o, string novoIme)
@@ -34,20 +34,22 @@ namespace ReferentniTipKaoParametar
             Console.WriteLine(string.Format("U metodi PromijeniIme mijenjam ime u {0}", novoIme));
             o.Ime = novoIme;
             Console.WriteLine(o);
-            Console.WriteLine("Nakon povratka iz metode PromijeniIMe:");
+            Console.WriteLine("Nakon povratka iz metode PromijeniIme:");
         }
 
         static void Main(string[] args)
         {
-            // TODO: Ispod sljedeće naredbe dodati poziv metode PromijeniOsobu s prosljeđenom osobom janko i ispisati osobu nakon poziva te metode.
+            // Ispod sljedeće naredbe dodati poziv metode PromijeniOsobu s prosljeđenom osobom janko i ispisati osobu nakon poziva te metode.
             Osoba janko = new Osoba("Janko", 1);
-
+            PromijeniOsobu(janko);
+            Console.WriteLine(janko);
 
             Console.WriteLine();
 
-            // TODO: Napisati poziv metode PromijeniIme s prosljeđenom osobom janko i novim imenom "Pero" i ispisati osobu nakon poziva te metode.
+            // Napisati poziv metode PromijeniIme s prosljeđenom osobom janko i novim imenom "Pero" i ispisati osobu nakon poziva te metode.
+            PromijeniIme(janko, "Pero");
+            Console.WriteLine(janko);
 
-            
             Console.WriteLine("GOTOVO!!!");
             Console.ReadKey();
         }
