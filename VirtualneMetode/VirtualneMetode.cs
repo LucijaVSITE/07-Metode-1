@@ -23,7 +23,7 @@ namespace Vsite.CSharp
         {
             Console.WriteLine("Izvedena1 Obično");
         }
-        public new virtual void IspišiImeVirtualno()
+        public override void IspišiImeVirtualno()
         {
             Console.WriteLine("Izvedena1 Virtualno");
         }
@@ -37,7 +37,7 @@ namespace Vsite.CSharp
         {
             Console.WriteLine("Izvedena2 Obično");
         }
-        public new virtual void IspišiImeVirtualno()
+        public override void IspišiImeVirtualno()
         {
             Console.WriteLine("Izvedena2 Virtualno");
         }
