@@ -21,7 +21,7 @@ namespace Vsite.CSharp
 
         static void Main(string[] args)
         {
-            // TODO: Prevesti program i otvoriti i pogledati generirani kod s ILDASM alatom.
+            // Prevesti program i otvoriti i pogledati generirani kod s ILDASM alatom.
 
             int i1 = 5;
             int i2 = 10;

@@ -14,13 +14,33 @@ namespace Vsite.CSharp
             Console.WriteLine("Bazna Virtualno");
         }
     }
-
+    //U klase Izvedena1 i Izvedena2 dodajte javno dostupne metode 
+    //IspišiImeObično koje će ispisati "Izvedena1 Obično", odnosno "Izvedena2 Obično". 
+    //Pokrenite program i usporedite ispise s prijašnjima.
     class Izvedena1 : Bazna
     {
+        public new void IspišiImeObično()
+        {
+            Console.WriteLine("Izvedena1 Obično");
+        }
+        public new virtual void IspišiImeVirtualno()
+        {
+            Console.WriteLine("Izvedena1 Virtualno");
+        }
     }
-
+    //U klase Izvedena1 i Izvedena2 dodajte javno dostupne metode
+    //IspišiImeVirtualno koje će ispisati "Izvedena1 Virtualno",
+    //odnosno "Izvedena2 Virtualno". Pokrenite program i usporedite ispise s prijašnjima.
     class Izvedena2 : Bazna
     {
+        public new void IspišiImeObično()
+        {
+            Console.WriteLine("Izvedena2 Obično");
+        }
+        public new virtual void IspišiImeVirtualno()
+        {
+            Console.WriteLine("Izvedena2 Virtualno");
+        }
     }
 
     public class VirtualneMetode
@@ -66,17 +86,31 @@ namespace Vsite.CSharp
 
         static void Main(string[] args)
         {
-            // TODO: Pokrenite program i provjerite što će se ispisati.
-
-            // TODO: U klase Izvedena1 i Izvedena2 dodajte javno dostupne metode IspišiImeObično koje će ispisati "Izvedena1 Obično", odnosno "Izvedena2 Obično". Pokrenite program i usporedite ispise s prijašnjima.
+            // Pokrenite program i provjerite što će se ispisati.
+//Zasebni pozivi nevirtualnih metoda:
+//Bazna Obicno
+//Bazna Obicno
+//Bazna Obicno
+//Pozivi nevirtualnih metoda na kolekciji baznih objekata:
+//            Bazna Obicno
+//Bazna Obicno
+//Bazna Obicno
+//Zasebni pozivi virtualnih metoda:
+//Bazna Virtualno
+//Bazna Virtualno
+//Bazna Virtualno
+//Pozivi virtualnih metoda na kolekciji baznih objekata:
+//            Bazna Virtualno
+//Bazna Virtualno
+//Bazna Virtualno
+//GOTOVO!!!
+           
 
             Console.WriteLine("Zasebni pozivi nevirtualnih metoda:");
             ZasebniPoziviNevirtualnihMetoda();
 
             Console.WriteLine("Pozivi nevirtualnih metoda na kolekciji baznih objekata:");
             PoziviNevirtualnihMetodaNaKolekcijiBaznogTipa();
-
-            // TODO: U klase Izvedena1 i Izvedena2 dodajte javno dostupne metode IspišiImeVirtualno koje će ispisati "Izvedena1 Virtualno", odnosno "Izvedena2 Virtualno". Pokrenite program i usporedite ispise s prijašnjima.
 
             Console.WriteLine("Zasebni pozivi virtualnih metoda:");
             ZasebniPoziviVirtualnihMetoda();
