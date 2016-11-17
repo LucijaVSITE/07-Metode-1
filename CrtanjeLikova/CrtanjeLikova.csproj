@@ -49,6 +49,7 @@
     <Compile Include="GeometrijskiLikovi\Elipsa.cs" />
     <Compile Include="GeometrijskiLikovi\GeometrijskiLik.cs" />
     <Compile Include="GeometrijskiLikovi\Pravokutnik.cs" />
+    <Compile Include="GeometrijskiLikovi\Trokut.cs" />
     <Compile Include="GlavnaForma.cs">
       <SubType>Form</SubType>
     </Compile>

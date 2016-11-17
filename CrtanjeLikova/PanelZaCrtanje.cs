@@ -46,6 +46,7 @@ namespace CrtanjeLikova
             crtež.Add(new Elipsa(80, 60, 60, 40));
             crtež.Add(new Pravokutnik(100, 120, 50, 20));
             crtež.Add(new Elipsa(180, 80, 50, 80));
+            crtež.Add(new Trokut(200, 100, 300, 13, 222, 333));
         }
 
         List<GeometrijskiLik> crtež = new List<GeometrijskiLik>();
