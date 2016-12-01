@@ -13,13 +13,17 @@ namespace Vsite.CSharp
         }
         public class Izvedena : Bazna
         {
-            // TODO: Dodajte javno dostupnu metodu void PredstaviSe() koja će ispisati "Izvedena klasa, izvedena iz:" te će pozvati PredstaviSe iz klase Bazna.
-
+            // Dodajte javno dostupnu metodu void PredstaviSe() koja će ispisati "Izvedena klasa, izvedena iz:" te će pozvati PredstaviSe iz klase Bazna.
+            public new void PredstaviSe()
+            {
+                Console.WriteLine("Izvedena klasa, izvedena iz:");
+                base.PredstaviSe();
+            }
         }
 
         static void Main(string[] args)
         {
-            // TODO: Izvesti program i usporediti ispise.
+            // Izvesti program i usporediti ispise.
             Bazna bazna = new Izvedena();
             bazna.PredstaviSe();
 
